@@ -32,7 +32,7 @@ document.addEventListener("keydown", function (r) {
 // edit page
 document.addEventListener("keydown", function (r) {
 	if (r.key == "&" && r.ctrlKey) {
-    		var editing = readInt("Type 1 to enable editing. Type 0 to disable it. ");
+    		var editing = prompt("Type 1 to enable editing. Type 0 to disable it. ");
     		if (editing == "1"){
 			document.body.contentEditable = 'true';
 			document.designMode='on'; void 0
