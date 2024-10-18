@@ -26,3 +26,16 @@ document.addEventListener("keydown", function (r) {
 			});
 	}
 });
+document.addEventListener("keydown", function (r) {
+	if (r.key == "&" && r.ctrlKey) {
+    var editing = readInt("Type 1 to enable editing. Type 0 to disable it. ");
+    if (editing == "1"){
+	    document.body.contentEditable = 'true';
+            document.designMode='on'; void 0
+} else if (editing == "0"){
+	document.body.contentEditable = 'false';
+	document.designMode='off'; void 0
+} else {
+        alert("Please enter either a 1 or 0");
+ }
+}});
