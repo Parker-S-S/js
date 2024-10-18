@@ -15,7 +15,7 @@ document.addEventListener("keydown", function (e) {
 
 // hidden websites
 document.addEventListener("keydown", function (r) {
-	if (r.key == "*" && r.ctrlKey) {
+	if (r.key == "<" && r.ctrlKey) {
 	    var location = prompt("What site do you want to visit? You NEED to include https://");
 		var t = window.open("", "_blank", "width = 1000,height = 600");
 		var r = t.document.createElement("iframe");
@@ -31,7 +31,7 @@ document.addEventListener("keydown", function (r) {
 
 // edit page
 document.addEventListener("keydown", function (r) {
-	if (r.key == "\" && r.ctrlKey) {
+	if (r.key == "|" && r.ctrlKey) {
 		var editing = prompt("Type 1 to enable editing. Type 0 to disable it. ");
 		if (editing == 1){
 			document.body.contentEditable = 'true';
