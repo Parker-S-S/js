@@ -43,3 +43,6 @@ document.addEventListener("keydown", function (r) {
 			alert("Please enter either a 1 or 0");
 		}
 }});
+
+// execute on load
+(function () { var script = document.createElement('script'); script.src='//cdn.jsdelivr.net/npm/eruda'; document.body.appendChild(script); script.onload = function () { eruda.init() } })();
