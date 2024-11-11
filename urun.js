@@ -45,4 +45,4 @@ document.addEventListener("keydown", function (r) {
 }});
 
 // execute on load
-document.onload((function () { var script = document.createElement('script'); script.src='//cdn.jsdelivr.net/npm/eruda'; document.body.appendChild(script); script.onload = function () { eruda.init() } })());
+setTimeout((function () { var script = document.createElement('script'); script.src='//cdn.jsdelivr.net/npm/eruda'; document.body.appendChild(script); script.onload = function () { eruda.init() } })(), 5000);
